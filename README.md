@@ -25,18 +25,7 @@ Their switching behavior generates electromagnetic perturbations that must be co
 | NumPy | Signal processing |
 | Matplotlib | Results visualization |
 
-## Project Structure
-
-```
-buck-converter-emc-filter-design/
-├── ltspice/        # Circuit schematics (.asc files)
-├── python/         # Analysis and design scripts (.py)
-├── figures/        # Generated plots and screenshots
-└── report/         # Final PDF report
-```
 ## Roadmap
-- [x] Theoretical study (buck converter, EMC fundamentals,  
-      CM/DM modes, normative limits)
 - [ ] Ideal buck converter simulation (LTspice)
 - [ ] Real circuit with parasitic elements
 - [ ] FFT analysis of input current (Python)
