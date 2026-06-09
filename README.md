@@ -15,6 +15,7 @@ The project covers three phases:
 
 ## Industrial Context
 Power electronics converters are widely used in embedded systems and many industries (aerospace, defense, industrial power conversion, automotive). 
+
 Their switching behavior generates electromagnetic perturbations that must be controlled to ensure coexistence with sensitive onboard equipment (sonar, radar, communication systems).
 
 ## Tools
