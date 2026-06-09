@@ -9,7 +9,7 @@ EMC analysis and filter design for a DC/DC buck converter with an LTspice simula
 Simulation and EMC compliance analysis of a DC/DC buck converter 
 (48V → 12V, 100 kHz switching frequency).  
 The project covers three phases:
-- **Analysis** - identification of conducted EMI emissions via FFT
+- **Analysis** - identification of conducted EMI (electromagnetic interference) emissions via FFT
 - **Design** - EMC filter dimensioning (common mode & differential mode)
 - **Validation** - comparison against MIL-STD-461 limits before and after filtering
 
@@ -38,4 +38,4 @@ Their switching behavior generates electromagnetic perturbations that must be co
 
 ## Author
 Christine Senghor - ENSEM Nancy, Electrical Engineering  
-Research intern at Laboratoire GREEN, Université de Lorraine
+
