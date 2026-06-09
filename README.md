@@ -1,4 +1,4 @@
-# buck-converter-emc-filter-design
+# Buck Converter — EMC Analysis & Filter Design
 EMC analysis and filter design for a DC/DC buck converter with an LTspice simulation &amp; a Python FFT analysis. 
 # Buck Converter — EMC Analysis & Filter Design
 
