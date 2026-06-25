@@ -32,8 +32,26 @@ Their switching behavior generates electromagnetic perturbations that must be co
 - [ ] EMC filter design and validation
 - [ ] Final report
 
-## Results
-*Coming soon - project in progress*
+## Résultats
+
+### Hacheur série idéal (48V → 12V, 100kHz, D=0.25)
+
+La tension de sortie se stabilise autour de 12V après un dépassement 
+transitoire d'environ 14V, ce qui est cohérent avec les prédictions 
+théoriques.
+
+![Tension de sortie](figures/vout_ideal.png)
+
+La tension au nœud de commutation montre la forme d'onde carrée 
+attendue, alternant entre 0V et 48V à la fréquence de découpage.
+
+![Nœud de commutation](figures/vsw_ideal.png)
+
+Le courant d'entrée présente la forme d'onde hachée caractéristique, 
+qui sera analysée dans le domaine fréquentiel (FFT) dans la section 
+suivante.
+
+![Courant d'entrée](figures/iv1_ideal.png)
 
 ## Author
 Christine Senghor - ENSEM Nancy, Electrical Engineering  
