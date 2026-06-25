@@ -40,12 +40,12 @@ La tension de sortie se stabilise autour de 12V après un dépassement
 transitoire d'environ 14V, ce qui est cohérent avec les prédictions 
 théoriques.
 
-![Tension de sortie](figures/vout_ideal.png)
+![Tension de sortie](figures/V_out_ideal.png)
 
 La tension au nœud de commutation montre la forme d'onde carrée 
 attendue, alternant entre 0V et 48V à la fréquence de découpage.
 
-![Nœud de commutation](figures/vsw_ideal.png)
+![Nœud de commutation](figures/Vsw_ideal.png)
 
 Le courant d'entrée présente la forme d'onde hachée caractéristique, 
 qui sera analysée dans le domaine fréquentiel (FFT) dans la section 
