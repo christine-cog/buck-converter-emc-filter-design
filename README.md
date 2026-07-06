@@ -9,13 +9,13 @@ Simulation and EMC compliance analysis of a DC/DC buck converter
 (48V → 12V, 100 kHz switching frequency).  
 The project covers three phases:
 - **Analysis** - identification of conducted EMI (electromagnetic interference) emissions via FFT
-- **Design** - EMC filter dimensioning (common mode & differential mode)
-- **Validation** - comparison against MIL-STD-461 limits before and after filtering
-
+- **Design** - EMC filter dimensioning 
+- **Validation** - comparison against EN 55022/32 Class B limits before and after filtering
 ## Industrial Context
 Power electronics converters are widely used in embedded systems and many industries (aerospace, defense, industrial power conversion, automotive). 
 
-Their switching behavior generates electromagnetic perturbations that must be controlled to ensure coexistence with sensitive onboard equipment (sonar, radar, communication systems).
+Their switching behavior generates electromagnetic perturbations that must be controlled to ensure coexistence with sensitive onboard equipment (sonar, radar, communication systems) and compliance with international EMC standards 
+(EN 55032, CISPR 25, MIL-STD-461, DO-160)..
 
 ## Tools
 | Tool | Purpose |
@@ -52,6 +52,44 @@ qui sera analysée dans le domaine fréquentiel (FFT) dans la section
 suivante.
 
 ![Courant d'entrée](figures/iv1_ideal.png)
+
+### 2. Circuit réel avec éléments parasites (Lp1 = Lp2 = 10nH)
+
+L'ajout des inductances parasites de câblage fait apparaître des 
+surtensions de ~140V au nœud de commutation (contre 48V pour le 
+circuit idéal). Ces surtensions sont la source principale des 
+perturbations CEM haute fréquence.
+
+![Vsw réel zoomé](figures/Vsw_reel_zoom.png)
+
+La tension de sortie reste stable à ~11.5V — les parasites 
+n'affectent pas le fonctionnement du convertisseur mais polluent 
+son environnement électromagnétique.
+
+![Vout réel](figures/V_out_reel.png)
+
+### 3. Circuit réel avec filtre CEM (Lf = 10mH, Cx = 10µF)
+
+Le filtre LC de mode différentiel lisse complètement le courant 
+d'entrée. Les perturbations haute fréquence ne remontent plus 
+vers la source d'alimentation.
+
+![Courant filtré](figures/iv1_filtered.png)
+
+### 4. Analyse spectrale FFT — comparaison finale
+
+Le spectre du courant d'entrée (converti en tension équivalente 
+RSIL à 50Ω) montre clairement l'effet du filtre :
+- **Rouge** : circuit réel sans filtre — dépassement de 90-100 dB 
+  au-dessus de la limite normative
+- **Violet** : circuit réel avec filtre — conforme ou quasi-conforme 
+  sur toute la bande 150kHz-30MHz
+
+![Spectre FFT final](figures/spectrum_final_comparison.png)
+
+*Note : la limite EN 55022/32 Class B (QP) est utilisée comme 
+référence. La conversion courant → tension est effectuée via 
+l'impédance standard du RSIL (50Ω).*
 
 ## Author
 Christine Senghor - ENSEM Nancy, Electrical Engineering  
