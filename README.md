@@ -68,7 +68,7 @@ son environnement électromagnétique.
 
 ![Vout réel](figures/V_out_reel.png)
 
-### 3. Circuit réel avec filtre CEM (Lf = 10mH, Cx = 10µF)
+### 3. Circuit réel avec filtre CEM (Lf = 10mH, Cf = 10µF)
 
 Le filtre LC de mode différentiel lisse complètement le courant 
 d'entrée. Les perturbations haute fréquence ne remontent plus 
