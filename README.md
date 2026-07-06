@@ -62,8 +62,8 @@ perturbations CEM haute fréquence.
 
 ![Vsw réel zoomé](figures/Vsw_reel_zoom.png)
 
-La tension de sortie reste stable à ~11.5V — les parasites 
-n'affectent pas le fonctionnement du convertisseur mais polluent 
+La tension de sortie reste stable à ~11.5V 
+Les parasites n'affectent pas le fonctionnement du convertisseur mais polluent 
 son environnement électromagnétique.
 
 ![Vout réel](figures/V_out_reel.png)
@@ -80,12 +80,12 @@ vers la source d'alimentation.
 
 Le spectre du courant d'entrée (converti en tension équivalente 
 RSIL à 50Ω) montre clairement l'effet du filtre :
-- **Rouge** : circuit réel sans filtre — dépassement de 90-100 dB 
+- **Rouge** : circuit réel sans filtre - dépassement de 90-100 dB 
   au-dessus de la limite normative
-- **Violet** : circuit réel avec filtre — conforme ou quasi-conforme 
+- **Violet** : circuit réel avec filtre - conforme ou quasi-conforme 
   sur toute la bande 150kHz-30MHz
 
-![Spectre FFT final](figures/spectrum_final_comparison.png)
+![Spectre FFT final](figures/cem_final_with_filter.png)
 
 *Note : la limite EN 55022/32 Class B (QP) est utilisée comme 
 référence. La conversion courant → tension est effectuée via 
