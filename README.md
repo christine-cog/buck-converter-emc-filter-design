@@ -47,7 +47,7 @@ Their switching behavior generates electromagnetic perturbations that must be co
 - [x] Real circuit with parasitic elements
 - [x] FFT analysis of input current (Python)
 - [x] EMC filter design and validation
-- [ ] Final report
+
   
 
 ## Résultats
