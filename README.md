@@ -39,15 +39,16 @@ Their switching behavior generates electromagnetic perturbations that must be co
 | R1 | 1 Ω | Resistive load |
 | Lp1, Lp2 | 10 nH | Parasitic inductances |
 | Lf | 10 mH | EMC filter inductor |
-| Cx | 10 µF | EMC filter capacitor |
+| Cf | 10 µF | EMC filter capacitor |
 
 
 ## Roadmap
-- [ ] Ideal buck converter simulation (LTspice)
-- [ ] Real circuit with parasitic elements
-- [ ] FFT analysis of input current (Python)
-- [ ] EMC filter design and validation
+- [x] Ideal buck converter simulation (LTspice)
+- [x] Real circuit with parasitic elements
+- [x] FFT analysis of input current (Python)
+- [x] EMC filter design and validation
 - [ ] Final report
+  
 
 ## Résultats
 
