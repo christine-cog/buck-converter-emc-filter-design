@@ -76,7 +76,7 @@ vers la source d'alimentation.
 
 ![Courant filtré](figures/iv1_filtered.png)
 
-### 4. Analyse spectrale FFT — comparaison finale
+### 4. Analyse spectrale FFT - comparaison finale
 
 Le spectre du courant d'entrée (converti en tension équivalente 
 RSIL à 50Ω) montre clairement l'effet du filtre :
