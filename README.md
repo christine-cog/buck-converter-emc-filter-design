@@ -50,7 +50,7 @@ Their switching behavior generates electromagnetic perturbations that must be co
 
   
 
-## Résultats
+## Results
 
 ### Hacheur série idéal (48V → 12V, 100kHz, D=0.25)
 
